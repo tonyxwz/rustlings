@@ -5,8 +5,11 @@
 
 // Write a macro that passes the test! No hints this time, you can do it!
 
-// I AM NOT DONE
-
+macro_rules! my_macro {
+    ($word:expr) => {
+        ["Hello", $word].join(" ")
+    };
+}
 #[cfg(test)]
 mod tests {
     use super::*;
